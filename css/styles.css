@@ -1,0 +1,97 @@
+/* Global Layout Set-up */
+
+* { 
+  box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #4a4a4a;
+  background: #fafafa;
+  font-size: 16px;
+}
+
+h2 {
+	font-size: 0.813em; /* 13px */
+}
+
+h3 {
+	font-weight: normal;
+}
+
+p {
+	line-height: 1.5em; /* 24px */
+}
+
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: #4a4a4a;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #6633ff;
+}
+
+/* Section Styles */
+
+.wrapper {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+header {
+	padding: 0 5%;
+}
+
+header,
+main {
+	text-align: center;
+}
+
+nav {
+	margin-bottom: 25px;
+
+}
+
+nav li {
+	list-style: none;
+	display: block;
+	padding: 10px 0;
+	background: #fff;
+	margin: 5px 0;
+}
+
+#about {
+	color: #7f7f7f;
+}
+
+#about img {
+	max-width: 70%;
+	border-radius: 50%;
+}
+
+#portfolio {
+	background: #fff;
+	padding: 40px 5%;
+}
+
+#contact {
+	padding: 50px 0;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+footer {
+	padding: 10px 5%;
+	display: flex;
+	justify-content: space-between;
+}
+
+img {
+	max-width: 100%;
+}
