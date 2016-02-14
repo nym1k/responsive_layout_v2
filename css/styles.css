@@ -20,6 +20,7 @@ h2 {
 
 h3 {
 	font-weight: normal;
+	margin: 25px auto 15px;
 }
 
 p {
@@ -43,6 +44,11 @@ a:hover {
 .wrapper {
 	max-width: 100%;
 	margin: 0 auto;
+}
+
+.project {
+/*	border: 2px solid red;*/
+	margin-top: 20px;
 }
 
 header {
@@ -69,16 +75,20 @@ nav li {
 
 #about {
 	color: #7f7f7f;
+	padding: 35px 5%;
 }
 
 #about img {
-	max-width: 70%;
-	border-radius: 50%;
+
 }
 
 #portfolio {
 	background: #fff;
 	padding: 40px 5%;
+}
+
+#portfolio img {
+	margin-top: 20px;
 }
 
 #contact {
@@ -93,5 +103,46 @@ footer {
 }
 
 img {
-	max-width: 100%;
+	width: 100%;
 }
+
+@media screen and (min-width: 720px) {
+
+	h2 {
+		width: 100%;
+	}
+
+	nav {
+		display: flex;
+		justify-content: space-around;
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	nav li {
+		background: #fafafa;
+	}
+
+	#about {
+		display: flex;
+		text-align: left;
+	}
+
+	#about img {
+		order: 2;
+	}
+
+	#portfolio {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.project {
+		width: 48%;
+	}
+
+	#contact {
+		width: 70%;
+		margin: 0 auto;
+	}
