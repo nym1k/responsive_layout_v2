@@ -16,6 +16,7 @@ body {
 
 h2 {
 	font-size: 0.813em; /* 13px */
+	margin: 40px auto;
 }
 
 h3 {
@@ -42,22 +43,18 @@ a:hover {
 /* Section Styles */
 
 .wrapper {
-	max-width: 100%;
+	width: 100%;
+	max-width: 1024px;
 	margin: 0 auto;
 }
 
 .project {
 /*	border: 2px solid red;*/
-	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 header {
 	padding: 0 5%;
-}
-
-header,
-main {
-	text-align: center;
 }
 
 nav {
@@ -67,10 +64,13 @@ nav {
 
 nav li {
 	list-style: none;
-	display: block;
 	padding: 10px 0;
 	background: #fff;
 	margin: 5px 0;
+}
+
+nav a {
+	display: block;
 }
 
 #about {
@@ -79,34 +79,40 @@ nav li {
 }
 
 #about img {
-
+	width: 75%;
 }
 
 #portfolio {
 	background: #fff;
-	padding: 40px 5%;
-}
-
-#portfolio img {
-	margin-top: 20px;
-}
-
-#contact {
-	padding: 50px 0;
-	border-bottom: 1px solid #e7e7e7;
+	padding: 0 5%;
 }
 
 footer {
-	padding: 10px 5%;
+	width: 90%;
+	margin: 0 auto;
+	border-top: 1px solid #e7e7e7;
+	padding: 10px 0;
 	display: flex;
 	justify-content: space-between;
+}
+
+.back-to-top {
+	display: block;
+}
+
+.bottom-nav {
+	display: none;
+}
+
+.bottom-nav li {
+	list-style: none;
 }
 
 img {
 	width: 100%;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
 
 	h2 {
 		width: 100%;
@@ -126,23 +132,63 @@ img {
 	#about {
 		display: flex;
 		text-align: left;
+		padding: 35px 3%;
 	}
 
 	#about img {
 		order: 2;
+		margin-left: 2%;
 	}
 
 	#portfolio {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-around;
+		justify-content: space-between;
+		padding-left: 3%;
+		padding-right: 3%;
 	}
 
 	.project {
-		width: 48%;
+		width: 49%;
 	}
 
 	#contact {
 		width: 70%;
 		margin: 0 auto;
+		padding: 20px 0;
 	}
+
+	.back-to-top {
+		display: none;
+	}
+
+	.bottom-nav {
+		display: flex;
+		justify-content: space-between;
+		width: 40%;
+		font-size: 0.813em; /* 13px */
+	}
+
+	@media screen and (min-width: 1024px) {
+
+		header {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		nav {
+			margin: 0;
+			justify-content: space-between;
+		}
+
+		h1 {
+			margin-right: auto;
+		}
+
+		.project {
+			width: 30%;
+		}
+
+		.bottom-nav {
+			width: 30%;
+		}
