@@ -8,10 +8,14 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Istok Web', sans-serif;
   color: #4a4a4a;
   background: #fafafa;
   font-size: 16px;
+}
+
+h1 {
+	font-size: 1.6em;
 }
 
 h2 {
@@ -20,7 +24,6 @@ h2 {
 }
 
 h3 {
-	font-weight: normal;
 	margin: 25px auto 15px;
 }
 
@@ -45,12 +48,11 @@ a:hover {
 .wrapper {
 	width: 100%;
 	max-width: 1024px;
-	margin: 0 auto;
+	margin: 10px auto 0;
 }
 
 .project {
-/*	border: 2px solid red;*/
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 header {
@@ -75,15 +77,20 @@ nav a {
 
 #about {
 	color: #7f7f7f;
-	padding: 35px 5%;
+	padding: 2% 5%;
 }
 
 #about img {
-	width: 75%;
+	max-width: 367px;
 }
 
 #portfolio {
 	background: #fff;
+	padding: 0 5%;
+	overflow: hidden;
+}
+
+#contact {
 	padding: 0 5%;
 }
 
@@ -114,14 +121,22 @@ img {
 
 @media screen and (min-width: 768px) {
 
+	h1 {
+		margin-bottom: .335em;
+	}
+
 	h2 {
 		width: 100%;
+	}
+
+	header {
+		padding: 0 3%;
 	}
 
 	nav {
 		display: flex;
 		justify-content: space-around;
-		width: 50%;
+		width: 40%;
 		margin: 0 auto;
 	}
 
@@ -133,11 +148,14 @@ img {
 		display: flex;
 		text-align: left;
 		padding: 35px 3%;
+		justify-content: space-between;
 	}
 
-	#about img {
+	.profileimg {
+		padding-left: 2%;
 		order: 2;
-		margin-left: 2%;
+		width: 40%;
+		flex-shrink: 0;
 	}
 
 	#portfolio {
@@ -155,7 +173,7 @@ img {
 	#contact {
 		width: 70%;
 		margin: 0 auto;
-		padding: 20px 0;
+		padding: 20px 5%;
 	}
 
 	.back-to-top {
@@ -179,6 +197,8 @@ img {
 		nav {
 			margin: 0;
 			justify-content: space-between;
+			align-items: center;
+			width: 30%;
 		}
 
 		h1 {
@@ -186,7 +206,7 @@ img {
 		}
 
 		.project {
-			width: 30%;
+			width: 32%;
 		}
 
 		.bottom-nav {
