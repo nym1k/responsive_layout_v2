@@ -59,19 +59,23 @@ header {
 	padding: 0 5%;
 }
 
-nav {
+.main-nav {
 	margin-bottom: 25px;
 
 }
 
-nav li {
+.main-nav ul {
+	padding: 0;
+}
+
+.main-nav li {
 	list-style: none;
 	padding: 10px 0;
 	background: #fff;
 	margin: 5px 0;
 }
 
-nav a {
+.main-nav a {
 	display: block;
 }
 
@@ -133,14 +137,17 @@ img {
 		padding: 0 3%;
 	}
 
-	nav {
-		display: flex;
-		justify-content: space-around;
+	.main-nav {
 		width: 40%;
 		margin: 0 auto;
 	}
 
-	nav li {
+	.main-nav ul {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.main-nav li {
 		background: #fafafa;
 	}
 
@@ -194,11 +201,14 @@ img {
 			flex-wrap: wrap;
 		}
 
-		nav {
+		.main-nav {
+			width: 30%;
 			margin: 0;
+		}
+
+		.main-nav ul {
 			justify-content: space-between;
 			align-items: center;
-			width: 30%;
 		}
 
 		h1 {
